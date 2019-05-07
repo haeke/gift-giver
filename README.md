@@ -1,21 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Simple Todo Application
+## Gift Giver
 
-This todo list application lets a user create a task name, date started, date ending, and amount of time spent in hours. A user will be able to delete any tasks that they do not want to keep and they can mark a task complete by clicking on the mark complete button.
-
-Project URL - https://haeke.github.io/list
+This project serves as an example of using Test Driven Development to create a React Project. The gift giver project let's a user keep a list of names and gifts that they will want to give to a friend or loved one. This project will use Jest and Enzyme to test the various features of the project.
 
 ## Technologies used
 
 - React - Stateful and Presentaional Components
+- Jest - for unit testing
+- Enzyme - for testing React components and DOM interactions
 - TypeScript - type definitions and interfaces
-  - TodoForm includes interfaces that define the TodoItem interface and State object
-  - The TodoItem interface is an object that contains the id, name, start, end, timeSpent, completed and active properties.
-  - The State object contains the id, name, start, end, timeSpent, completed and active and a todoItems array as properties.
-  - The TodoItems component uses the TodoItem interface object.
-- Local Storage is used to keep a local copy of your personal Todo List items in your browser.
 - Semantic HTML5
 - CSS3
 - Flexbox
 - Github Pages
+
+## Features
+
+1.  The ability to create a gift.
+2.  The ability to delete a gift.
