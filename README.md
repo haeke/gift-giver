@@ -9,6 +9,8 @@ This project serves as an example of using Test Driven Development to create a R
 - React - Stateful and Presentaional Components
 - Jest - for unit testing
 - Enzyme - for testing React components and DOM interactions
+- Snapshot testing - can be useful if you want to test for changes in the DOM.
+  `press u` to update the snapshot if you want to keep an update to the DOM.
 - TypeScript - type definitions and interfaces
 - Semantic HTML5
 - CSS3

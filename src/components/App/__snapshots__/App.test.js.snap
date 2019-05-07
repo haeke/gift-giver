@@ -19,7 +19,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <h1>
-        App
+        App Test SnapShot
       </h1>,
     },
     "ref": null,
@@ -28,10 +28,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "App",
+        "children": "App Test SnapShot",
       },
       "ref": null,
-      "rendered": "App",
+      "rendered": "App Test SnapShot",
       "type": "h1",
     },
     "type": "div",
@@ -43,7 +43,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <h1>
-          App
+          App Test SnapShot
         </h1>,
       },
       "ref": null,
@@ -52,10 +52,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "App",
+          "children": "App Test SnapShot",
         },
         "ref": null,
-        "rendered": "App",
+        "rendered": "App Test SnapShot",
         "type": "h1",
       },
       "type": "div",
