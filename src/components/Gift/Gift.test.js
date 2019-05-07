@@ -19,4 +19,18 @@ describe("Gift", () => {
   it("expects the `state` to contain an object with person and present properties", () => {
     expect(gift.state()).toEqual({ person: "", present: "" });
   });
+
+  describe("when typing into the the person input", () => {
+    const person = "Uncle";
+    beforeEach(() => {
+      // desribes testing the person input such that it receives a value of Uncle
+      gift
+        .find(".input-person")
+        .simulate("change", { target: { value: person } });
+    });
+
+    it("updates the person object in `state`", () => {
+      expect(gift.state().person).toEqual(person);
+    });
+  });
 });

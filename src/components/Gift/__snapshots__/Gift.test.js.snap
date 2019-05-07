@@ -18,21 +18,155 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        Gift
-      </h1>,
+      "children": <ForwardRef
+        as="form"
+        inline={false}
+      >
+        <ForwardRef
+          as="input"
+          className="input-person"
+          onChange={[Function]}
+        />
+      </ForwardRef>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "Gift",
+        "as": "form",
+        "children": <ForwardRef
+          as="input"
+          className="input-person"
+          onChange={[Function]}
+        />,
+        "inline": false,
       },
       "ref": null,
-      "rendered": "Gift",
-      "type": "h1",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "input",
+          "className": "input-person",
+          "onChange": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Feedback": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "div",
+              "type": "valid",
+            },
+            "displayName": "Feedback",
+            "propTypes": Object {
+              "as": [Function],
+              "type": [Function],
+            },
+            "render": [Function],
+          },
+          "defaultProps": Object {
+            "as": "input",
+          },
+          "displayName": "FormControl",
+          "render": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Check": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Input": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "type": "checkbox",
+            },
+            "displayName": "FormCheckInput",
+            "render": [Function],
+          },
+          "Label": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "type": "checkbox",
+            },
+            "displayName": "FormCheckLabel",
+            "render": [Function],
+          },
+          "defaultProps": Object {
+            "disabled": false,
+            "inline": false,
+            "isInvalid": false,
+            "isValid": false,
+            "title": "",
+            "type": "checkbox",
+          },
+          "displayName": "FormCheck",
+          "render": [Function],
+        },
+        "Control": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Feedback": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "div",
+              "type": "valid",
+            },
+            "displayName": "Feedback",
+            "propTypes": Object {
+              "as": [Function],
+              "type": [Function],
+            },
+            "render": [Function],
+          },
+          "defaultProps": Object {
+            "as": "input",
+          },
+          "displayName": "FormControl",
+          "render": [Function],
+        },
+        "Group": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "div",
+          },
+          "displayName": "FormGroup",
+          "render": [Function],
+        },
+        "Label": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "column": false,
+            "srOnly": false,
+          },
+          "displayName": "FormLabel",
+          "render": [Function],
+        },
+        "Row": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "FormRow",
+          "render": [Function],
+        },
+        "Text": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "small",
+          },
+          "displayName": "FormText",
+          "render": [Function],
+        },
+        "defaultProps": Object {
+          "as": "form",
+          "inline": false,
+        },
+        "displayName": "Form",
+        "render": [Function],
+      },
     },
     "type": "div",
   },
@@ -42,21 +176,155 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          Gift
-        </h1>,
+        "children": <ForwardRef
+          as="form"
+          inline={false}
+        >
+          <ForwardRef
+            as="input"
+            className="input-person"
+            onChange={[Function]}
+          />
+        </ForwardRef>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "children": "Gift",
+          "as": "form",
+          "children": <ForwardRef
+            as="input"
+            className="input-person"
+            onChange={[Function]}
+          />,
+          "inline": false,
         },
         "ref": null,
-        "rendered": "Gift",
-        "type": "h1",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "input",
+            "className": "input-person",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "Feedback": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+                "type": "valid",
+              },
+              "displayName": "Feedback",
+              "propTypes": Object {
+                "as": [Function],
+                "type": [Function],
+              },
+              "render": [Function],
+            },
+            "defaultProps": Object {
+              "as": "input",
+            },
+            "displayName": "FormControl",
+            "render": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Check": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "Input": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "type": "checkbox",
+              },
+              "displayName": "FormCheckInput",
+              "render": [Function],
+            },
+            "Label": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "type": "checkbox",
+              },
+              "displayName": "FormCheckLabel",
+              "render": [Function],
+            },
+            "defaultProps": Object {
+              "disabled": false,
+              "inline": false,
+              "isInvalid": false,
+              "isValid": false,
+              "title": "",
+              "type": "checkbox",
+            },
+            "displayName": "FormCheck",
+            "render": [Function],
+          },
+          "Control": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "Feedback": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+                "type": "valid",
+              },
+              "displayName": "Feedback",
+              "propTypes": Object {
+                "as": [Function],
+                "type": [Function],
+              },
+              "render": [Function],
+            },
+            "defaultProps": Object {
+              "as": "input",
+            },
+            "displayName": "FormControl",
+            "render": [Function],
+          },
+          "Group": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "div",
+            },
+            "displayName": "FormGroup",
+            "render": [Function],
+          },
+          "Label": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "column": false,
+              "srOnly": false,
+            },
+            "displayName": "FormLabel",
+            "render": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "FormRow",
+            "render": [Function],
+          },
+          "Text": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "small",
+            },
+            "displayName": "FormText",
+            "render": [Function],
+          },
+          "defaultProps": Object {
+            "as": "form",
+            "inline": false,
+          },
+          "displayName": "Form",
+          "render": [Function],
+        },
       },
       "type": "div",
     },

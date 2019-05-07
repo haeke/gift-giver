@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Form, FormGroup, FormControl, Button } from "react-bootstrap";
 
 interface State {
   person: string;
@@ -13,7 +14,12 @@ class Gift extends Component<{}, State> {
   render() {
     return (
       <div>
-        <h1>Gift</h1>
+        <Form>
+          <FormControl
+            className="input-person"
+            onChange={event => this.setState({ person: event.target.value })}
+          />
+        </Form>
       </div>
     );
   }
