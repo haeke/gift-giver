@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 
-class Gift extends Component {
+interface State {
+  person: string;
+  present: string;
+}
+
+class Gift extends Component<{}, State> {
+  state = {
+    person: "",
+    present: ""
+  };
   render() {
     return (
       <div>

@@ -15,4 +15,8 @@ describe("Gift", () => {
   it("expects Gift to work", () => {
     expect(gift).toMatchSnapshot();
   });
+
+  it("expects the `state` to contain an object with person and present properties", () => {
+    expect(gift.state()).toEqual({ person: "", present: "" });
+  });
 });
