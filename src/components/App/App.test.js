@@ -21,19 +21,25 @@ describe("App", () => {
     expect(app.state().gifts).toEqual([]);
   });
 
-  it("adds a new gift to the `state` by clicking the add gift button", () => {
-    // use the find method to look for the react component that contains the class .btn-add
-    // use the simulate function to mock user interaction
-    app.find(".btn-add").simulate("click");
-    //
-    expect(app.state().gifts).toEqual([{ id: 1 }]);
-  });
+  describe("when clicking the `add-gift` button", () => {
+    // we can use beforeEach inside of a describe the user interaction that is run when testing for a new array item and rendering a new item to the DOM.
+    beforeEach(() => {
+      // use the find method to look for the react component that contains the class .btn-add
+      // use the simulate function to mock user interaction
+      app.find(".btn-add").simulate("click");
+    });
+    // Use after each to set the state of the gifts object back to the original state, this is done to make sure that the rendered list test contains one child node.
+    afterEach(() => {
+      app.setState({ gifts: [] });
+    });
 
-  it("adds a new gift to the rendered list when clicking the add gift button", () => {
-    // use the find method
-    // use the simulate function to mock user interaction
-    app.find(".btn-add").simulate("click");
-    // find the dom node with gift-list then look at all of its children nodes and check that the length is equal 1.
-    expect(app.find(".gift-list").children().length).toEqual(2);
+    it("adds a new gift to the `state`", () => {
+      expect(app.state().gifts).toEqual([{ id: 1 }]);
+    });
+
+    it("adds a new gift to the rendered list", () => {
+      // find the dom node with gift-list then look at all of its children nodes and check that the length is equal 1.
+      expect(app.find(".gift-list").children().length).toEqual(1);
+    });
   });
 });
