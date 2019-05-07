@@ -33,4 +33,18 @@ describe("Gift", () => {
       expect(gift.state().person).toEqual(person);
     });
   });
+
+  describe("when typinh into the present input", () => {
+    const present = "Calculator";
+    beforeEach(() => {
+      // test the present input such that it received a value of Calculator
+      gift
+        .find(".input-present")
+        .simulate("change", { target: { value: present } });
+    });
+
+    it("updates the present object in `state`", () => {
+      expect(gift.state().present).toEqual(present);
+    });
+  });
 });

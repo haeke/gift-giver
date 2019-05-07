@@ -27,6 +27,11 @@ ShallowWrapper {
           className="input-person"
           onChange={[Function]}
         />
+        <ForwardRef
+          as="input"
+          className="input-present"
+          onChange={[Function]}
+        />
       </ForwardRef>,
     },
     "ref": null,
@@ -36,47 +41,89 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "as": "form",
-        "children": <ForwardRef
-          as="input"
-          className="input-person"
-          onChange={[Function]}
-        />,
+        "children": Array [
+          <ForwardRef
+            as="input"
+            className="input-person"
+            onChange={[Function]}
+          />,
+          <ForwardRef
+            as="input"
+            className="input-present"
+            onChange={[Function]}
+          />,
+        ],
         "inline": false,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "as": "input",
-          "className": "input-person",
-          "onChange": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "Feedback": Object {
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "input",
+            "className": "input-person",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
             "$$typeof": Symbol(react.forward_ref),
+            "Feedback": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+                "type": "valid",
+              },
+              "displayName": "Feedback",
+              "propTypes": Object {
+                "as": [Function],
+                "type": [Function],
+              },
+              "render": [Function],
+            },
             "defaultProps": Object {
-              "as": "div",
-              "type": "valid",
+              "as": "input",
             },
-            "displayName": "Feedback",
-            "propTypes": Object {
-              "as": [Function],
-              "type": [Function],
-            },
+            "displayName": "FormControl",
             "render": [Function],
           },
-          "defaultProps": Object {
-            "as": "input",
-          },
-          "displayName": "FormControl",
-          "render": [Function],
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "input",
+            "className": "input-present",
+            "onChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "Feedback": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+                "type": "valid",
+              },
+              "displayName": "Feedback",
+              "propTypes": Object {
+                "as": [Function],
+                "type": [Function],
+              },
+              "render": [Function],
+            },
+            "defaultProps": Object {
+              "as": "input",
+            },
+            "displayName": "FormControl",
+            "render": [Function],
+          },
+        },
+      ],
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
         "Check": Object {
@@ -185,6 +232,11 @@ ShallowWrapper {
             className="input-person"
             onChange={[Function]}
           />
+          <ForwardRef
+            as="input"
+            className="input-present"
+            onChange={[Function]}
+          />
         </ForwardRef>,
       },
       "ref": null,
@@ -194,47 +246,89 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "as": "form",
-          "children": <ForwardRef
-            as="input"
-            className="input-person"
-            onChange={[Function]}
-          />,
+          "children": Array [
+            <ForwardRef
+              as="input"
+              className="input-person"
+              onChange={[Function]}
+            />,
+            <ForwardRef
+              as="input"
+              className="input-present"
+              onChange={[Function]}
+            />,
+          ],
           "inline": false,
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "as": "input",
-            "className": "input-person",
-            "onChange": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "Feedback": Object {
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "input",
+              "className": "input-person",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
               "$$typeof": Symbol(react.forward_ref),
+              "Feedback": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                  "type": "valid",
+                },
+                "displayName": "Feedback",
+                "propTypes": Object {
+                  "as": [Function],
+                  "type": [Function],
+                },
+                "render": [Function],
+              },
               "defaultProps": Object {
-                "as": "div",
-                "type": "valid",
+                "as": "input",
               },
-              "displayName": "Feedback",
-              "propTypes": Object {
-                "as": [Function],
-                "type": [Function],
-              },
+              "displayName": "FormControl",
               "render": [Function],
             },
-            "defaultProps": Object {
-              "as": "input",
-            },
-            "displayName": "FormControl",
-            "render": [Function],
           },
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "input",
+              "className": "input-present",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "Feedback": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                  "type": "valid",
+                },
+                "displayName": "Feedback",
+                "propTypes": Object {
+                  "as": [Function],
+                  "type": [Function],
+                },
+                "render": [Function],
+              },
+              "defaultProps": Object {
+                "as": "input",
+              },
+              "displayName": "FormControl",
+              "render": [Function],
+            },
+          },
+        ],
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Check": Object {
