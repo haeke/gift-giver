@@ -17,7 +17,7 @@ class App extends React.Component<{}, State> {
   addGift = () => {
     const { gifts } = this.state;
     // get a list of all of the ids inside the gifts array
-    let ids = gifts.map(gift => gift.id);
+    let ids = gifts.map((gift: any) => gift.id);
     // get the maximum id inside of the ids array account for the possiblity of there being no items
     let maxId = ids.length > 0 ? Math.max(...ids) : 0;
 
@@ -26,9 +26,14 @@ class App extends React.Component<{}, State> {
     });
   };
   render() {
+    const { gifts } = this.state;
     return (
       <div>
         <h1>App Test SnapShot</h1>
+        <div className="gift-list">
+          {gifts.length > 0 &&
+            gifts.map((gift: any) => <div key={gift.id}>item</div>)}
+        </div>
         <Button className="btn-add" onClick={this.addGift}>
           Add
         </Button>

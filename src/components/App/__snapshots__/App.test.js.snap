@@ -22,6 +22,9 @@ ShallowWrapper {
         <h1>
           App Test SnapShot
         </h1>,
+        <div
+          className="gift-list"
+        />,
         <ForwardRef
           active={false}
           className="btn-add"
@@ -46,6 +49,18 @@ ShallowWrapper {
         "ref": null,
         "rendered": "App Test SnapShot",
         "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": false,
+          "className": "gift-list",
+        },
+        "ref": null,
+        "rendered": false,
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -87,6 +102,9 @@ ShallowWrapper {
           <h1>
             App Test SnapShot
           </h1>,
+          <div
+            className="gift-list"
+          />,
           <ForwardRef
             active={false}
             className="btn-add"
@@ -111,6 +129,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": "App Test SnapShot",
           "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": false,
+            "className": "gift-list",
+          },
+          "ref": null,
+          "rendered": false,
+          "type": "div",
         },
         Object {
           "instance": null,

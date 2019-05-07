@@ -27,3 +27,11 @@ it("adds a new gift to the `state` by clicking the add gift button", () => {
   //
   expect(app.state().gifts).toEqual([{ id: 1 }]);
 });
+
+it("adds a new gift to the rendered list when clicking the add gift button", () => {
+  // use the find method
+  // use the simulate function to mock user interaction
+  app.find(".btn-add").simulate("click");
+  // find the dom node with gift-list then look at all of its children nodes and check that the length is equal 1.
+  expect(app.find(".gift-list").children().length).toEqual(2);
+});
