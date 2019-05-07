@@ -22,11 +22,16 @@ ShallowWrapper {
         <h1>
           App Test SnapShot
         </h1>,
-        <button
+        <ForwardRef
+          active={false}
           className="btn-add"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+          variant="primary"
         >
           Add
-        </button>,
+        </ForwardRef>,
       ],
     },
     "ref": null,
@@ -45,14 +50,29 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
+          "active": false,
           "children": "Add",
           "className": "btn-add",
+          "disabled": false,
+          "onClick": [Function],
+          "type": "button",
+          "variant": "primary",
         },
         "ref": null,
         "rendered": "Add",
-        "type": "button",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "active": false,
+            "disabled": false,
+            "type": "button",
+            "variant": "primary",
+          },
+          "displayName": "Button",
+          "render": [Function],
+        },
       },
     ],
     "type": "div",
@@ -67,11 +87,16 @@ ShallowWrapper {
           <h1>
             App Test SnapShot
           </h1>,
-          <button
+          <ForwardRef
+            active={false}
             className="btn-add"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+            variant="primary"
           >
             Add
-          </button>,
+          </ForwardRef>,
         ],
       },
       "ref": null,
@@ -90,14 +115,29 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
+            "active": false,
             "children": "Add",
             "className": "btn-add",
+            "disabled": false,
+            "onClick": [Function],
+            "type": "button",
+            "variant": "primary",
           },
           "ref": null,
           "rendered": "Add",
-          "type": "button",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "active": false,
+              "disabled": false,
+              "type": "button",
+              "variant": "primary",
+            },
+            "displayName": "Button",
+            "render": [Function],
+          },
         },
       ],
       "type": "div",
