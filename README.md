@@ -27,3 +27,27 @@ This project serves as an example of using Test Driven Development to create a R
 
 4.  Run Coverage Tests
     `npm run test -- --coverage`
+
+        Testing components that use the redux connect function. Always use named exports for testing.
+        Example -
+        `
+        import React from "react";
+        import { configure, shallow } from "enzyme";
+        import Adapter from "enzyme-adapter-react-16";
+        // named export statement IMPORTANT
+        import { Wallet } from "./Wallet";
+
+        // required to make enzyme work
+        configure({ adapter: new Adapter() });
+
+        describe("Wallet", () => {
+        const wallet = shallow(<Wallet />);
+
+        it("renders properly", () => {
+                expect(wallet).toMatchSnapshot();
+            });
+        });
+
+    `
+
+    Or you will get an error in regards to not finding the "store" in either the context or or props of "Connect(Wallet)"
