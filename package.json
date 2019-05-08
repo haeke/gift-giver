@@ -22,7 +22,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://haeke.github.io/list",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.tsx",
+      "!src/index.js"
+    ]
+  },
+  "homepage": "http://haeke.github.io/",
   "eslintConfig": {
     "extends": "react-app"
   },
