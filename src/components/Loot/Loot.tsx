@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-const Loot = ({ balance }) => {
+export const Loot = ({ balance }) => {
   return (
     <div>
       <h1>Loot</h1>
-      <p>{balance}</p>
+      <p>Balance: {balance}</p>
     </div>
   );
 };

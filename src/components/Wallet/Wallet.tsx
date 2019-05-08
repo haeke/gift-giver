@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-class Wallet extends Component {
+export class Wallet extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>
-        <h1>Wallet component</h1>
+        <h1>Wallet balance: {this.props.balance}</h1>
       </div>
     );
   }
