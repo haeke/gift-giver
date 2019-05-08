@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { maxNumber } from "../../helpers/helpers";
 
 import Gift from "../Gift/Gift";
-import Loot from "../Loot/Loot";
+import Wallet from "../Wallet/Wallet";
 interface GiftInterface {
   id: number;
 }
@@ -50,7 +50,7 @@ class App extends React.Component<{}, State> {
               </Gift>
             ))}
         </div>
-        <Loot />
+        <Wallet />
       </div>
     );
   }
