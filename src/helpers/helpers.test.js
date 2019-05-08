@@ -10,9 +10,7 @@ describe("the maxNumber", () => {
   describe("given an array of numbers", () => {
     describe("returns the max number", () => {
       it("returns 3", () => {
-        expect(maxNumber([{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }])).toEqual(
-          4
-        );
+        expect(maxNumber([1, 2, 3, 4])).toEqual(4);
       });
     });
   });

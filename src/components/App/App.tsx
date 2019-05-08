@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { maxNumber } from "../../helpers/helpers";
 
 import Gift from "../Gift/Gift";
 
@@ -21,7 +22,7 @@ class App extends React.Component<{}, State> {
     // get a list of all of the ids inside the gifts array
     let ids = gifts.map((gift: any) => gift.id);
     // get the maximum id inside of the ids array account for the possiblity of there being no items
-    let maxId = ids.length > 0 ? Math.max(...ids) : 0;
+    let maxId = maxNumber(ids);
 
     this.setState({
       gifts: [...gifts, { id: maxId + 1 }]
