@@ -1,12 +1,14 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-interface Gift {
+import Gift from "../Gift/Gift";
+
+interface GiftInterface {
   id: number;
 }
 
 interface State {
-  gifts: Array<Gift | any>;
+  gifts: Array<GiftInterface | any>;
 }
 
 class App extends React.Component<{}, State> {
@@ -25,18 +27,28 @@ class App extends React.Component<{}, State> {
       gifts: [...gifts, { id: maxId + 1 }]
     });
   };
+
+  removeGift = (id: number) => {
+    const gifts = this.state.gifts.filter((gift: any) => gift.id !== id);
+
+    this.setState({ gifts });
+  };
   render() {
     const { gifts } = this.state;
     return (
       <div>
         <h1>App Test SnapShot</h1>
-        <div className="gift-list">
-          {gifts.length > 0 &&
-            gifts.map((gift: any) => <div key={gift.id}>item</div>)}
-        </div>
         <Button className="btn-add" onClick={this.addGift}>
           Add
         </Button>
+        <div className="gift-list">
+          {gifts.length > 0 &&
+            gifts.map((gift: any) => (
+              <Gift key={gift.id} gift={gift} removeGift={this.removeGift}>
+                item
+              </Gift>
+            ))}
+        </div>
       </div>
     );
   }

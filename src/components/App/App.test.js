@@ -22,6 +22,7 @@ describe("App", () => {
   });
 
   describe("when clicking the `add-gift` button", () => {
+    const id = 1;
     // we can use beforeEach inside of a describe the user interaction that is run when testing for a new array item and rendering a new item to the DOM.
     beforeEach(() => {
       // use the find method to look for the react component that contains the class .btn-add
@@ -34,12 +35,28 @@ describe("App", () => {
     });
 
     it("adds a new gift to the `state`", () => {
-      expect(app.state().gifts).toEqual([{ id: 1 }]);
+      expect(app.state().gifts).toEqual([{ id }]);
     });
 
     it("adds a new gift to the rendered list", () => {
       // find the dom node with gift-list then look at all of its children nodes and check that the length is equal 1.
       expect(app.find(".gift-list").children().length).toEqual(1);
+    });
+
+    it("creates a Gift component", () => {
+      // Use the find function to look for an instance of the Gift component, the exists component will return a boolean, use the toBe function to test that the component should exist.
+      expect(app.find("Gift").exists()).toBe(true);
+    });
+
+    describe("and the user wants to remove the added gift.", () => {
+      beforeEach(() => {
+        // use the instance function to get access to the removeGift function defined in the app component.
+        app.instance().removeGift(id);
+      });
+
+      it("removes the gift from `state`", () => {
+        expect(app.state().gifts).toEqual([]);
+      });
     });
   });
 });
