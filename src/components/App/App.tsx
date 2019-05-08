@@ -2,7 +2,14 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { maxNumber } from "../../helpers/helpers";
 
+import { createStore } from "redux";
+import rootReducer from "../../reducers/balance";
+import { Provider } from "react-redux";
+
+const store = createStore(rootReducer);
+
 import Gift from "../Gift/Gift";
+import Loot from "../Loot/Loot";
 
 interface GiftInterface {
   id: number;
@@ -50,6 +57,9 @@ class App extends React.Component<{}, State> {
               </Gift>
             ))}
         </div>
+        <Provider store={store}>
+          <Loot />
+        </Provider>
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 class Loot extends Component {
   render() {
@@ -10,4 +11,8 @@ class Loot extends Component {
   }
 }
 
-export default Loot;
+const mapStateToProps = state => {
+  balance: state.balance;
+};
+
+export default connect(mapStateToProps)(Loot);

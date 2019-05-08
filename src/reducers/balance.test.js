@@ -5,8 +5,6 @@ describe("balanceReducer", () => {
   it("sets a balance", () => {
     const balance = 10;
 
-    expect(balanceReducer(undefined, { type: SET_BALANCE, balance })).toEqual(
-      balance
-    );
+    expect(balanceReducer(0, { type: SET_BALANCE, balance })).toEqual(balance);
   });
 });
