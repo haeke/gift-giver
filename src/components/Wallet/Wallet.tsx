@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-export class Wallet extends Component {
+export class Wallet extends Component<{ balance: number }> {
   constructor(props) {
     super(props);
   }
@@ -8,7 +8,7 @@ export class Wallet extends Component {
   render() {
     return (
       <div>
-        <h1>Wallet balance: {this.props.balance}</h1>
+        <h1 className="balance">Wallet balance: {this.props.balance}</h1>
       </div>
     );
   }

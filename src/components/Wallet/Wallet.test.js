@@ -8,9 +8,15 @@ import { Wallet } from "./Wallet";
 configure({ adapter: new Adapter() });
 
 describe("Wallet", () => {
-  const wallet = shallow(<Wallet />);
+  const props = { balance: 20 };
+  const wallet = shallow(<Wallet {...props} />);
 
   it("renders properly", () => {
     expect(wallet).toMatchSnapshot();
+  });
+
+  it("displays the balance from props", () => {
+    // Tests that the balance prop is being passed to the Wallet component
+    expect(wallet.find(".balance").text()).toEqual("Wallet balance: 20");
   });
 });
