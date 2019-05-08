@@ -1,6 +1,6 @@
 import { SET_BALANCE, DEPOSIT, WITHDRAWAL } from "./constants";
 import { setBalance } from "./balance";
-import { depositAction } from "../actions/balance";
+import { depositAction, withdrawalAction } from "../actions/balance";
 
 it("creates an action to set the balance", () => {
   const balance = 0;
@@ -23,5 +23,5 @@ it("creates an action to withdraw from the balance", () => {
 
   const expectedAction = { type: WITHDRAWAL, withdrawal };
 
-  expect(depositAction(withdrawal)).toEqual(expectedAction);
+  expect(withdrawalAction(withdrawal)).toEqual(expectedAction);
 });
