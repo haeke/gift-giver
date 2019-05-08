@@ -35,6 +35,7 @@ ShallowWrapper {
         <div
           className="gift-list"
         />,
+        <UNDEFINED />,
       ],
     },
     "ref": null,
@@ -89,6 +90,22 @@ ShallowWrapper {
         "rendered": false,
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Loot)",
+          "type": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
     ],
     "type": "div",
   },
@@ -115,6 +132,7 @@ ShallowWrapper {
           <div
             className="gift-list"
           />,
+          <UNDEFINED />,
         ],
       },
       "ref": null,
@@ -168,6 +186,22 @@ ShallowWrapper {
           "ref": null,
           "rendered": false,
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(Loot)",
+            "type": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
         },
       ],
       "type": "div",
