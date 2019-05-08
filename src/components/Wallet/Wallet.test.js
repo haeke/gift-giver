@@ -15,7 +15,7 @@ describe("Wallet", () => {
   const props = {
     balance: 20,
     depositAction: mockDeposit,
-    withdraw: mockWithdraw
+    withdrawalAction: mockWithdraw
   };
   const wallet = shallow(<Wallet {...props} />);
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { depositAction } from "../../actions/balance";
+import { depositAction, withdrawalAction } from "../../actions/balance";
 
 interface State {
   balance: number;
@@ -10,6 +10,7 @@ export class Wallet extends Component<
   {
     balance: number;
     depositAction: (balance: number) => void;
+    withdrawalAction: (balance: number) => void;
   },
   State
 > {
@@ -31,6 +32,10 @@ export class Wallet extends Component<
     this.props.depositAction(this.state.balance);
   };
 
+  withdraw = () => {
+    this.props.withdrawalAction(this.state.balance);
+  };
+
   render() {
     return (
       <div>
@@ -39,6 +44,9 @@ export class Wallet extends Component<
         <input className="input-wallet" onChange={this.updateBalance} />
         <button className="btn-deposit" onClick={this.deposit}>
           Deposit
+        </button>
+        <button className="btn-withdraw" onClick={this.withdraw}>
+          Withdraw
         </button>
       </div>
     );
@@ -51,5 +59,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { depositAction }
+  { depositAction, withdrawalAction }
 )(Wallet);
