@@ -1,4 +1,4 @@
-import { SET_BALANCE, DEPOSIT } from "../actions/constants";
+import { SET_BALANCE, DEPOSIT, WITHDRAWAL } from "../actions/constants";
 
 export default (state = 0, action) => {
   switch (action.type) {
@@ -6,6 +6,8 @@ export default (state = 0, action) => {
       return action.balance;
     case DEPOSIT:
       return state + action.deposit;
+    case WITHDRAWAL:
+      return state - action.withdrawal;
     default:
       return state;
   }
