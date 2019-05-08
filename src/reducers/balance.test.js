@@ -1,6 +1,5 @@
 import balanceReducer from "./balance";
 import { SET_BALANCE, DEPOSIT } from "../actions/constants";
-import { depositAction } from "../actions/balance";
 
 describe("balanceReducer", () => {
   it("sets a balance", () => {
@@ -9,11 +8,12 @@ describe("balanceReducer", () => {
     expect(balanceReducer(0, { type: SET_BALANCE, balance })).toEqual(balance);
   });
 
-  it("creates an action to deposit into the balance", () => {
-    const deposit = 20;
+  it("deposits into the balance", () => {
+    const deposit = 10;
+    const initialState = 5;
 
-    const expectedAction = { type: DEPOSIT, deposit };
-
-    expect(depositAction(deposit)).toEqual(expectedAction);
+    expect(balanceReducer(initialState, { type: DEPOSIT, deposit })).toEqual(
+      initialState + deposit
+    );
   });
 });
