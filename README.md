@@ -24,3 +24,6 @@ This project serves as an example of using Test Driven Development to create a R
 2.  The ability to delete a gift.
     - A delete button will be created when a user clicks on the add button.
 3.  The List of Gifts
+
+4.  Run Coverage Tests
+    `npm run test -- --coverage`
