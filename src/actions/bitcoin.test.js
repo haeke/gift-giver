@@ -13,7 +13,7 @@ const createStore = configureMockStore([thunk]);
 // pass an initial object to the store called bitcoin that is just an empty object
 const store = createStore({ bitcoin: {} });
 // the mock response is what fetchMock is going to return
-const mockResponse = { body: '{"bpi":"bitcoin price index"}' };
+const mockResponse = { body: { bpi: "bitcoin price index" } };
 // fetchMock supports all HTTP verbs
 // pass the mockResponse as the second argument
 fetchMock.get(
