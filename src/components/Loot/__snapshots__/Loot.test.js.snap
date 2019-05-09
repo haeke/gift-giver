@@ -3,7 +3,10 @@
 exports[`Loot renders properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Loot />,
+  Symbol(enzyme.__unrendered__): <Loot
+    balance={10}
+    bitcoin={Object {}}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -20,10 +23,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
-          Loot
+          Bitcoin
         </h1>,
         <p>
-          Balance: 
+          Conversion Bitcoin: 
         </p>,
       ],
     },
@@ -34,10 +37,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Loot",
+          "children": "Bitcoin",
         },
         "ref": null,
-        "rendered": "Loot",
+        "rendered": "Bitcoin",
         "type": "h1",
       },
       Object {
@@ -45,16 +48,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Balance: ",
-            undefined,
-          ],
+          "children": "Conversion Bitcoin: ",
         },
         "ref": null,
-        "rendered": Array [
-          "Balance: ",
-          undefined,
-        ],
+        "rendered": "Conversion Bitcoin: ",
         "type": "p",
       },
     ],
@@ -68,10 +65,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
-            Loot
+            Bitcoin
           </h1>,
           <p>
-            Balance: 
+            Conversion Bitcoin: 
           </p>,
         ],
       },
@@ -82,10 +79,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Loot",
+            "children": "Bitcoin",
           },
           "ref": null,
-          "rendered": "Loot",
+          "rendered": "Bitcoin",
           "type": "h1",
         },
         Object {
@@ -93,16 +90,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Balance: ",
-              undefined,
-            ],
+            "children": "Conversion Bitcoin: ",
           },
           "ref": null,
-          "rendered": Array [
-            "Balance: ",
-            undefined,
-          ],
+          "rendered": "Conversion Bitcoin: ",
           "type": "p",
         },
       ],
@@ -133,5 +124,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

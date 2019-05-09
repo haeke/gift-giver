@@ -10,7 +10,9 @@ import { Loot } from "./Loot";
 configure({ adapter: new Adapter() });
 
 describe("Loot", () => {
-  const loot = shallow(<Loot />);
+  const mockFetchBitcoin = jest.fn();
+  const props = { balance: 10, bitcoin: {} };
+  const loot = shallow(<Loot {...props} />);
   // Test to make sure that the loot component renders
   it("renders properly", () => {
     expect(loot).toMatchSnapshot();
