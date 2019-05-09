@@ -10,6 +10,10 @@ export class Loot extends Component<{
     super(props);
   }
 
+  componentDidMount() {
+    this.props.fetchBitcoin();
+  }
+
   render() {
     return (
       <div>
