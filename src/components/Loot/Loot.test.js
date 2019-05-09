@@ -11,7 +11,7 @@ configure({ adapter: new Adapter() });
 
 describe("Loot", () => {
   const mockFetchBitcoin = jest.fn();
-  const props = { balance: 10, bitcoin: {}, fetchBitcoin: mockFetchBitcoin };
+  let props = { balance: 10, bitcoin: {}, fetchBitcoin: mockFetchBitcoin };
   let loot = shallow(<Loot {...props} />);
   // Test to make sure that the loot component renders
   it("renders properly", () => {
@@ -27,6 +27,18 @@ describe("Loot", () => {
       it("dispatches the `fetchBitcoin()` action that it recieves from props", () => {
         expect(mockFetchBitcoin).toHaveBeenCalled();
       });
+    });
+  });
+
+  describe("when there are valid bitcoin props", () => {
+    beforeEach(() => {
+      // update thr props object
+      props = { balance: 10, bitcoin: { bpi: { USD: { rate: "1,000" } } } };
+      loot = shallow(<Loot {...props} />);
+    });
+
+    it("displays the correct bitcoin value", () => {
+      expect(loot.find("p").text()).toEqual("Conversion Bitcoin: 0.01");
     });
   });
 });

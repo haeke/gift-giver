@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { fetchBitcoin } from "../../actions/bitcoin";
 
 export class Loot extends Component<{
+  balance: number;
   bitcoin: any;
   fetchBitcoin: () => void;
 }> {
@@ -14,17 +15,29 @@ export class Loot extends Component<{
     this.props.fetchBitcoin();
   }
 
+  computeBitcoin = () => {
+    const { bitcoin } = this.props;
+
+    // make sure the bitcoin object is present
+    if (Object.keys(bitcoin).length === 0) return "";
+
+    return (
+      this.props.balance / parseInt(bitcoin.bpi.USD.rate.replace(",", ""), 10)
+    );
+  };
+
   render() {
     return (
       <div>
         <h1>Bitcoin</h1>
-        <p>Conversion Bitcoin: </p>
+        <p>Conversion Bitcoin: {this.computeBitcoin()}</p>
       </div>
     );
   }
 }
 
 const mapStateToProps = state => ({
+  balance: state.balance,
   bitcoin: state.bitcoin
 });
 
