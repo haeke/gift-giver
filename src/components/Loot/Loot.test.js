@@ -32,8 +32,12 @@ describe("Loot", () => {
 
   describe("when there are valid bitcoin props", () => {
     beforeEach(() => {
-      // update thr props object
-      props = { balance: 10, bitcoin: { bpi: { USD: { rate: "1,000" } } } };
+      // update the props object
+      props = {
+        balance: 10,
+        bitcoin: { bpi: { USD: { rate: "1,000" } } },
+        fetchBitcoin: mockFetchBitcoin
+      };
       loot = shallow(<Loot {...props} />);
     });
 
