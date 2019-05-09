@@ -13,7 +13,7 @@ const createStore = configureMockStore([thunk]);
 // pass an initial object to the store called bitcoin that is just an empty object
 const store = createStore({ bitcoin: {} });
 // the mock response is what fetchMock is going to return
-const mockResponse = { body: { bpi: "bitcoin price index" } };
+const mockResponse = { body: '{"bpi":"bitcoin price index"}' };
 // fetchMock supports all HTTP verbs
 // pass the mockResponse as the second argument
 fetchMock.get(
@@ -22,9 +22,7 @@ fetchMock.get(
 );
 
 it("creates an async action to fetch the bitcoin value", () => {
-  const expectedActions = [
-    { bitcoin: mockResponse.body, action: FETCH_BITCOIN }
-  ];
+  const expectedActions = [{ bitcoin: mockResponse.body, type: FETCH_BITCOIN }];
 
   // mock calling dispatch from the mock store that calls the fetchBitcoin action creator, when making async calls jest requires that we return the async call.
   return store.dispatch(fetchBitcoin()).then(() => {
