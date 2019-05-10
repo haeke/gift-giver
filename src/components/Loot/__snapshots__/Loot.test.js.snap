@@ -43,6 +43,7 @@ ShallowWrapper {
           
         </p>,
       ],
+      "className": "loot",
     },
     "ref": null,
     "rendered": Array [
@@ -92,6 +93,7 @@ ShallowWrapper {
             
           </p>,
         ],
+        "className": "loot",
       },
       "ref": null,
       "rendered": Array [

@@ -5,6 +5,7 @@ import { maxNumber } from "../../helpers/helpers";
 import Gift from "../Gift/Gift";
 import Wallet from "../Wallet/Wallet";
 import Loot from "../Loot/Loot";
+import Credit from "../Credit/Credit";
 
 interface GiftInterface {
   id: number;
@@ -54,6 +55,7 @@ class App extends React.Component<{}, State> {
         </div>
         <Wallet />
         <Loot />
+        <Credit />
       </div>
     );
   }

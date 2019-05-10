@@ -61,6 +61,15 @@ describe("App", () => {
   });
 
   it("contains a connected Loot component", () => {
-    expect(app.find("Connect(Loot)").exists()).toBe(true);
+    expect(app.find("ConnectFunction").exists()).toBe(true);
+  });
+
+  it("contains a connected Wallet component", () => {
+    expect(app.find("ConnectFunction").exists()).toBe(true);
+  });
+
+  it("contains a Credit component", () => {
+    console.log(app.debug());
+    expect(app.find("Credit").exists()).toBe(true);
   });
 });
