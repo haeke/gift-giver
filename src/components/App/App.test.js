@@ -59,4 +59,8 @@ describe("App", () => {
       });
     });
   });
+
+  it("contains a connected Loot component", () => {
+    expect(app.find("Connect(Loot)").exists()).toBe(true);
+  });
 });

@@ -38,7 +38,7 @@ export class Wallet extends Component<
 
   render() {
     return (
-      <div>
+      <div className="wallet">
         <h1 className="balance">Wallet balance: {this.props.balance}</h1>
         <br />
         <input className="input-wallet" onChange={this.updateBalance} />

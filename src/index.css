@@ -18,6 +18,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/background.jpg");
+}
+
+button {
+  margin-left: 5px;
+}
+
+button,
+input {
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: white;
 }
 
 h1 {
