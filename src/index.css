@@ -45,3 +45,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.wallet {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.walletWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
