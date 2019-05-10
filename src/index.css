@@ -51,9 +51,15 @@ code {
   margin: 0 auto;
 }
 
-.walletWrapper {
+.walletWrapper,
+.lootWrapper,
+.creditWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btnGroup {
+  display: flex;
 }

@@ -29,8 +29,10 @@ export class Loot extends Component<{
   render() {
     return (
       <div className="loot">
-        <h1>Bitcoin</h1>
-        <p>Conversion Bitcoin: {this.computeBitcoin()}</p>
+        <div className="lootWrapper">
+          <h1>Bitcoin</h1>
+          <p>Conversion Bitcoin: {this.computeBitcoin()}</p>
+        </div>
       </div>
     );
   }
