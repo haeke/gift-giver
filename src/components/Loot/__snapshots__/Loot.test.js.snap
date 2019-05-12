@@ -34,52 +34,21 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="lootWrapper"
+      >
         <h1>
           Bitcoin
-        </h1>,
+        </h1>
         <p>
           Conversion Bitcoin: 
           
-        </p>,
-      ],
+        </p>
+      </div>,
       "className": "loot",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Bitcoin",
-        },
-        "ref": null,
-        "rendered": "Bitcoin",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Conversion Bitcoin: ",
-            "",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Conversion Bitcoin: ",
-          "",
-        ],
-        "type": "p",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -93,7 +62,7 @@ ShallowWrapper {
             
           </p>,
         ],
-        "className": "loot",
+        "className": "lootWrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -126,6 +95,79 @@ ShallowWrapper {
           "type": "p",
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="lootWrapper"
+        >
+          <h1>
+            Bitcoin
+          </h1>
+          <p>
+            Conversion Bitcoin: 
+            
+          </p>
+        </div>,
+        "className": "loot",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Bitcoin
+            </h1>,
+            <p>
+              Conversion Bitcoin: 
+              
+            </p>,
+          ],
+          "className": "lootWrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Bitcoin",
+            },
+            "ref": null,
+            "rendered": "Bitcoin",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Conversion Bitcoin: ",
+                "",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Conversion Bitcoin: ",
+              "",
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

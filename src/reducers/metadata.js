@@ -16,7 +16,6 @@ export default (state = initialState, action) => {
         ...state,
         data: action.payload,
         metadata: {
-          ...state.metadata,
           pending: false,
           loaded: true,
           error: false

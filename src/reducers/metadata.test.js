@@ -14,8 +14,8 @@ describe("metadata reducer", () => {
 
   it("fetches and sets the lorem data", () => {
     // test calling the FETCH_LOREM action on the metadataReducer
-    expect(metadataReducer({}, { type: FETCH_LOREM, data: loremData })).toEqual(
-      loremData
-    );
+    expect(
+      metadataReducer({}, { type: FETCH_LOREM, payload: loremData.data })
+    ).toEqual(loremData);
   });
 });
