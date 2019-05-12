@@ -38,16 +38,20 @@ export class Wallet extends Component<
 
   render() {
     return (
-      <div>
-        <h1 className="balance">Wallet balance: {this.props.balance}</h1>
-        <br />
-        <input className="input-wallet" onChange={this.updateBalance} />
-        <button className="btn-deposit" onClick={this.deposit}>
-          Deposit
-        </button>
-        <button className="btn-withdraw" onClick={this.withdraw}>
-          Withdraw
-        </button>
+      <div className="wallet">
+        <div className="walletWrapper">
+          <h1 className="balance">Wallet balance: {this.props.balance}</h1>
+          <br />
+          <div className="btnGroup">
+            <input className="input-wallet" onChange={this.updateBalance} />
+            <button className="btn-deposit" onClick={this.deposit}>
+              Deposit
+            </button>
+            <button className="btn-withdraw" onClick={this.withdraw}>
+              Withdraw
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

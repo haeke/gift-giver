@@ -47,6 +47,7 @@ ShallowWrapper {
           Withdraw
         </button>,
       ],
+      "className": "wallet",
     },
     "ref": null,
     "rendered": Array [
@@ -149,6 +150,7 @@ ShallowWrapper {
             Withdraw
           </button>,
         ],
+        "className": "wallet",
       },
       "ref": null,
       "rendered": Array [

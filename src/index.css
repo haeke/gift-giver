@@ -18,6 +18,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/background.jpg");
+}
+
+button {
+  margin-left: 5px;
+}
+
+button,
+input {
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: white;
 }
 
 h1 {
@@ -32,4 +44,22 @@ p {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.wallet {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.walletWrapper,
+.lootWrapper,
+.creditWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnGroup {
+  display: flex;
 }
